@@ -2,6 +2,7 @@
 This is a course design I completed when I was a freshman. Uploaded here now  
   
 <br />  
+
 ## Developing Environment:  
 
 /*    Platform Kit : Visual Studio 2019 (v142)     */  
@@ -12,7 +13,8 @@ This is a course design I completed when I was a freshman. Uploaded here now
 
 /*    Project Type : Qt Widgets Application        */  
   
-<br /> 
+<br />  
+
 ## Module Imported:  
 
 Qt Moudule:Core; GUI; Multimedia; Network; Widgets
