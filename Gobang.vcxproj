@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5CE413BA-4AD5-4E0C-8D38-EF4C89733422}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>msvs2017_64</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>msvs2017_64</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation\AnimationButton.cpp" />
+    <ClCompile Include="GameFunction\AI.cpp" />
+    <ClCompile Include="GameFunction\AI_Settings.cpp" />
+    <ClCompile Include="GameFunction\base_Game.cpp" />
+    <ClCompile Include="GameFunction\password_Error.cpp" />
+    <ClCompile Include="GameFunction\PVP_Client.cpp" />
+    <ClCompile Include="GameFunction\pvp_Create.cpp" />
+    <ClCompile Include="GameFunction\pvp_Join.cpp" />
+    <ClCompile Include="GameFunction\PVP_Server.cpp" />
+    <ClCompile Include="GameFunction\PVP_Settings.cpp" />
+    <ClCompile Include="GameFunction\PVP_UI.cpp" />
+    <ClCompile Include="GameFunction\Regame.cpp" />
+    <ClCompile Include="GameFunction\Trace.cpp" />
+    <ClCompile Include="GameFunction\Waiting_UI.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Main_UI\Fun_4.cpp" />
+    <ClCompile Include="Main_UI\Gobang.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="..\..\Resource\Gobang.qrc" />
+    <QtRcc Include="..\..\Resource\Gobang2.qrc" />
+    <QtRcc Include="..\..\Resource\Gobang3.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="GameFunction\AI.ui" />
+    <QtUic Include="GameFunction\AI_Settings.ui" />
+    <QtUic Include="GameFunction\password_Error.ui" />
+    <QtUic Include="GameFunction\PVP_Client.ui" />
+    <QtUic Include="GameFunction\pvp_Create.ui" />
+    <QtUic Include="GameFunction\pvp_Join.ui" />
+    <QtUic Include="GameFunction\PVP_Server.ui" />
+    <QtUic Include="GameFunction\PVP_Settings.ui" />
+    <QtUic Include="GameFunction\PVP_UI.ui" />
+    <QtUic Include="GameFunction\Regame.ui" />
+    <QtUic Include="GameFunction\Trace.ui" />
+    <QtUic Include="GameFunction\Waiting_UI.ui" />
+    <QtUic Include="Main_UI\Fun_4.ui" />
+    <QtUic Include="Main_UI\Gobang.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="GameFunction\AI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="GameFunction\Trace.h" />
+    <QtMoc Include="GameFunction\password_Error.h" />
+    <QtMoc Include="GameFunction\AI_Settings.h" />
+    <QtMoc Include="Animation\AnimationButton.h" />
+    <ClInclude Include="GameFunction\base_Game.h" />
+    <QtMoc Include="GameFunction\Regame.h" />
+    <QtMoc Include="GameFunction\Waiting_UI.h" />
+    <QtMoc Include="GameFunction\pvp_Join.h" />
+    <QtMoc Include="GameFunction\pvp_Create.h" />
+    <QtMoc Include="GameFunction\PVP_Settings.h" />
+    <QtMoc Include="GameFunction\PVP_Server.h" />
+    <QtMoc Include="GameFunction\PVP_Client.h" />
+    <QtMoc Include="GameFunction\PVP_UI.h" />
+    <QtMoc Include="Main_UI\Fun_4.h" />
+    <QtMoc Include="Main_UI\Gobang.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ICON.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

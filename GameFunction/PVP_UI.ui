@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PVP_UI</class>
+ <widget class="QWidget" name="PVP_UI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PVP_UI</string>
+  </property>
+  <widget class="QWidget" name="Main_UI" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="PVP_BackButton">
+    <property name="geometry">
+     <rect>
+      <x>1715</x>
+      <y>81</y>
+      <width>86</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Resource/UI_Design/#Block.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../../../Resource/Gobang.qrc">
+      <normaloff>:/Resource/UI_Design/PVP_BackButton.png</normaloff>:/Resource/UI_Design/PVP_BackButton.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>86</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="background" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image:url(:/Resource/UI_Design/PVP_UI.png)</string>
+    </property>
+   </widget>
+   <zorder>background</zorder>
+   <zorder>PVP_BackButton</zorder>
+  </widget>
+  <widget class="QLabel" name="Transition">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../../../Resource/Gobang.qrc">:/Resource/UI_Design/(Trans)PVP_UI.png</pixmap>
+   </property>
+  </widget>
+  <zorder>Transition</zorder>
+  <zorder>Main_UI</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../../Resource/Gobang.qrc"/>
+ </resources>
+ <connections/>
+</ui>
