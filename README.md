@@ -24,3 +24,5 @@ Qt Moudule:Core; GUI; Multimedia; Network; Widgets
 ## Download Release:  
 
 Release_GoBang.zip on releases
+
+Or click the link: https://github.com/YoungFog/GoBang/releases/download/Game/Release_GoBang_YoungFog.zip
