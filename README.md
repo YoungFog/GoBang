@@ -10,4 +10,5 @@ This is a course design I completed when I was a freshman. Uploaded here now
 /*    Project Type : Qt Widgets Application        */
 
 Module Imported:
+
 Qt Moudule:Core; GUI; Multimedia; Network; Widgets
