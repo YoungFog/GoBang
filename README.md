@@ -18,3 +18,9 @@ This is a course design I completed when I was a freshman. Uploaded here now
 ## Module Imported:  
 
 Qt Moudule:Core; GUI; Multimedia; Network; Widgets
+  
+<br />  
+  
+## Download Release:  
+
+Release_GoBang.zip on tag 'game'  / in release
