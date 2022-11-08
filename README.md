@@ -23,4 +23,4 @@ Qt Moudule:Core; GUI; Multimedia; Network; Widgets
   
 ## Download Release:  
 
-Release_GoBang.zip on tag 'game'  / in release
+Release_GoBang.zip on releases
