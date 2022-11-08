@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/Resource">
+        <file>UI_Design/Fun4_BackButton.png</file>
+        <file>UI_Design/Fun4_UI.png</file>
+        <file>UI_Design/Author.png</file>
+        <file>UI_Design/EndGame.png</file>
+        <file>UI_Design/Fun1.png</file>
+        <file>UI_Design/Fun2.png</file>
+        <file>UI_Design/Fun3.png</file>
+        <file>UI_Design/Fun4.png</file>
+        <file>UI_Design/Mode1.png</file>
+        <file>UI_Design/Mode2.png</file>
+        <file>UI_Design/Mode3.png</file>
+        <file>UI_Design/NoneMode_Warning1.png</file>
+        <file>UI_Design/NoneMode_Warning2.png</file>
+        <file>UI_Design/Transition_Main UI.png</file>
+        <file>UI_Design/black.png</file>
+        <file>UI_Design/Board_UI.png</file>
+		<file>UI_Design/Theme.png</file>
+        <file>UI_Design/white.png</file>
+        <file>UI_Design/#Block.png</file>
+        <file>UI_Design/PVP_BackButton.png</file>
+        <file>UI_Design/PVP_Setting.png</file>
+        <file>UI_Design/PVP_UI.png</file>
+        <file>UI_Design/PVP_Create.png</file>
+        <file>UI_Design/PVP_Join.png</file>
+        <file>UI_Design/Create.png</file>
+        <file>UI_Design/Create_Button.png</file>
+        <file>UI_Design/Join.png</file>
+		<file>UI_Design/Waiting.png</file>
+		<file>UI_Design/Waiting_BackButton.png</file>
+		<file>UI_Design/Regame_request.png</file>
+		<file>UI_Design/PVP_Settings_UI.png</file>
+		<file>UI_Design/pvpSettings_Cancel.png</file>
+		<file>UI_Design/pvpSettings_Save.png</file>
+		<file>UI_Design/RadioButton.png</file>
+		<file>UI_Design/RadioButton2.png</file>
+		<file>UI_Design/once1.png</file>
+		<file>UI_Design/(Trans)PVP_UI.png</file>
+    </qresource>
+</RCC>

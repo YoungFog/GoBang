@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Resource3">
+		<file>UI_Design/Main UI.png</file>
+		<file>UI_Design/Main_UI_blue.png</file>
+    </qresource>
+</RCC>

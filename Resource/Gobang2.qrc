@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/Resource2">
+		<file>UI_Design/AI_settings_checked.png</file>
+		<file>UI_Design/AI_settings_block.png</file>
+		<file>UI_Design/AI_settings_start.png</file>
+		<file>UI_Design/AI_Settings.png</file>
+		<file>UI_Design/AI_Traceback.png</file>
+		<file>UI_Design/Trace_request.png</file>
+		<file>UI_Design/AI_Regame.png</file>
+		<file>UI_Design/AI_Rechoose.png</file>
+		<file>UI_Design/Regame_dialog.png</file>
+		<file>UI_Design/Regame_accept.png</file>
+		<file>UI_Design/Regame_refuse.png</file>
+		<file>UI_Design/character_1.png</file>
+		<file>UI_Design/character_2.png</file>
+		<file>UI_Design/character_3.png</file>
+		<file>UI_Design/character_4.png</file>
+		<file>UI_Design/character_5.png</file>
+		<file>UI_Design/character_6.png</file>
+		<file>UI_Design/character_7.png</file>
+		<file>UI_Design/character_8.png</file>
+		<file>UI_Design/character_9.png</file>
+		<file>UI_Design/Inf_Card.png</file>
+		<file>UI_Design/password_Error.png</file>
+		<file>UI_Design/password_Error_confirm.png</file>
+		<file>UI_Design/Exit_blue.png</file>
+		<file>UI_Design/Mode1_blue.png</file>
+		<file>UI_Design/Mode2_blue.png</file>
+		<file>UI_Design/Theme_blue.png</file>
+    </qresource>
+</RCC>
