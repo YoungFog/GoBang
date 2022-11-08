@@ -1,5 +1,5 @@
 # GoBang
-This is a course design I completed when I was a freshman. Uploaded here now
+This is a course design I completed when I was a freshman. Uploaded here now   
 
 
 
@@ -9,7 +9,7 @@ This is a course design I completed when I was a freshman. Uploaded here now
 
 /*    SDK Version  : 10.0.18362.0 (WIN)            */
 
-/*    Project Type : Qt Widgets Application        */
+/*    Project Type : Qt Widgets Application        */   
 
 
 
